@@ -1,4 +1,5 @@
 ---
-- name: check disk status
-  shell: df -h
-
+- name: trivially create a file
+  shell: echo "hello" > /tmp/hello
+  args:
+    creates: /tmp/hello
