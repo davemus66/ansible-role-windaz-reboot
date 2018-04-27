@@ -3,3 +3,7 @@
   shell: echo "hello" > /tmp/hello
   args:
     creates: /tmp/hello
+- name: simple df command
+  shell: echo df -h > /tmp/df
+  args:
+    creates: /tmp/df
