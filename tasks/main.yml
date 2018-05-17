@@ -1,3 +1,4 @@
-- name: Restart Windows server
-- win_reboot:
-    reboot_timeout: 60
+- name: Reboot for Windows
+  win_reboot: reboot_timeout_sec=60
+              connect_timeout_sec=60
+              shutdown_timeout_sec=60
